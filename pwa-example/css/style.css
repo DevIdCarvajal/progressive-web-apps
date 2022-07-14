@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+}
+
+#task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 15%;
+  text-align: right;
+}
+
+.right {
+  width: 85%;
+}
+
+#button-bar {
+  text-align: center;
+}
+
+#button-bar > a {
+  text-decoration: none;
+  color: white;
+  background-color: blueviolet;
+  padding: 4px;
+}
+
+@media screen and (min-width: 1080px) {
+  
+  #task-list {
+    flex-direction: row;
+  }
+
+  .task {
+    width: 50%;
+  }
+}

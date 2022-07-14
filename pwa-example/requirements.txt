@@ -1,0 +1,27 @@
+
+-----------------------------
+APLICACIÓN DE LISTA DE TAREAS
+-----------------------------
+
+-- Funcionalidades --
+
+  1) Crear una tarea
+  2) Modificar una tarea
+  3) Borrar una tarea
+  4) Marcar como completada
+  5) Listar tareas
+
+-- Análisis --
+
+  MODELO (Datos)
+    Tarea:
+      - Texto (200)
+      - Completada (Sí/No)
+
+  FUNCIONES (Proceso)
+    - Crear tarea nueva --> Generar una tarea
+    - Modificar una tarea anterior --> Editar una tarea (sustituir Texto)
+    - Borrar una tarea anterior
+    - Cambiar el estado de una tarea anterior --> Editar una tarea (alternar Completada)
+    - Para cada una de las tareas anteriores:
+      - Mostrar Texto y Completada
