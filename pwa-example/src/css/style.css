@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#wrapper {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#title {
+  text-align: center;
+}
+
+#task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 2%;
+  margin: 10px 2%;
+  background-color: khaki;
+  border-radius: 4px;
+  width: 92%;
+}
+
+.left {
+  width: 15%;
+  text-align: right;
+}
+
+.right {
+  width: 85%;
+}
+
+#button-bar {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#button-bar > a {
+  text-decoration: none;
+  color: white;
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#task-form {
+  padding: 20px 2%;
+  margin: 10px 2%;
+  background-color: khaki;
+  border-radius: 4px;
+  width: 92%;
+}
+
+#task-form > input {
+  width: 96%;
+  padding: 10px 2%;
+  margin: 0;
+  border: 0;
+}
+
+#new, #edit {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  #wrapper {
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  #wrapper {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  #task-list {
+    flex-direction: row;
+  }
+
+  .task {
+    width: 50%;
+  }
+}
