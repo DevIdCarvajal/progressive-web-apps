@@ -1,0 +1,22 @@
+{
+  "chef": "DevId",
+  "recipes": [
+    {
+      "name": "Tortilla de patatas",
+      "ingredients": [
+        "Patatas",
+        "Aceite",
+        "Huevos",
+        "Cebolla"
+      ],
+      "preparation": "...",
+      "time": 30
+    },
+    {
+      "name": "...",
+      "ingredients": [],
+      "preparation": "...",
+      "time": 0
+    }
+  ]
+}
