@@ -1,3 +1,12 @@
+// ------------------ Register SW ------------------
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register("/pwa-example/serviceworker.js");
+  //navigator.serviceWorker.register("/serviceworker.js");
+}
+
+// ------------------ App data ------------------
+
 const tasks = [
   {
     id: 1,
@@ -10,6 +19,8 @@ const tasks = [
     completed: false
   }
 ]
+
+// ------------------ App logic ------------------
 
 function showTasks() {
 
@@ -56,13 +67,28 @@ function loadHome() {
   // 2) Show home
   document.querySelector("#home").style.display = "block"
 
-  // 3) Save new task
-  const newTask = {
-    text: document.querySelector("#create-input").value,
-    completed: false
+  // 3) Save new task in storage
+  if (typeof(Storage) !== "undefined") {
+
+    // Create task id (in memory)
+    let i = 1
+
+    const newTask = {
+      id: i,
+      text: document.querySelector("#create-input").value,
+      completed: false
+    }
+    
+    localStorage.setItem("task" + i, newTask)
+
+    i++
+
+  } else {
+    // Sorry! No Web Storage support..
   }
 
-  tasks.push(newTask)
+  // In memory example (never!!!)
+  // tasks.push(newTask)
 
   // 4) Clean previous tasks
   document.querySelector("#task-list").innerHTML = ""

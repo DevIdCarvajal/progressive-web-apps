@@ -1,0 +1,22 @@
+{
+  "name": "Tasklist Progressive Web App",
+  "short_name": "Tasklist",
+  "description": "Progressive Web App that lists tasks to do.",
+  "icons": [
+    {
+      "src": "/pwa-example/img/icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-example/img/icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "id": "/pwa-example/",
+  "start_url": "/pwa-example/",
+  "display": "standalone",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}
